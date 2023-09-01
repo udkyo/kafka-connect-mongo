@@ -44,7 +44,5 @@ mvn clean verify -Dquick
 DIST_DIR="$(pwd)/../dist"
 mkdir -p "${DIST_DIR}"
 cp \
-    debezium-api/target/debezium-api-${PRODUCT_VERSION}.jar \
-    debezium-connector-mongodb/target/debezium-connector-mongodb-${PRODUCT_VERSION}.jar \
-    debezium-core/target/debezium-core-${PRODUCT_VERSION}.jar \
+    debezium-connector-mongodb/target/debezium-connector-mongodb-${PRODUCT_VERSION}-jar-with-dependencies.jar \
     "${DIST_DIR}"
